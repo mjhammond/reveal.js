@@ -26,11 +26,70 @@
 			  <div class="slides">
             <section data-markdown>
                 <textarea data-template>
-                    ReasonML
+                    <h1>
+                        Reason ML
+                    </h1>
                 </textarea>
             </section>
             <section>
+                <h3>What is it?</h3>
+                <ul>
+                    <li class="fragment">Syntax of OCaml</li>
+                    <li class="fragment">
+                        Transforms to OCaml and compiles to JS
+                    </li>
+                    <li class="fragment">
+                        Also compiles to assembly
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>What can it do for us?</h3>
+                <ul>
+                    <li class="fragment">
+                        Static, inferred types
+                    </li>
+                    <li class="fragment">
+                        Functional purity and immutability...
+                    </li>
+                    <li class="fragment">
+                        ...but with escape hatches for easy side effects, mutations, etc.
+                    </li>
+                    <li class="fragment">
+                        Fast builds and small output sizes
+                    </li>
+                    <li class="fragment">
+                        Carry on using Yarn, Webpack, all your favourite node modules etc.
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    What about other compile to JS languages?
+                </h3>
+                <ul>
+                    <li class="fragment">
+                        Elm
+                    </li>
+                    <li class="fragment">
+                        ClojureScript
+                    </li>
+                    <li class="fragment">
+                        PureScript
+                    </li>
+                    <li class="fragment">
+                        CoffeeScript
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>
+                    What does it look like?
+                </h3>
                 <section>
+                    <p>
+                        Assignment, strings and booleans
+                    </p>
                     <pre style="width: 45%; float: left; margin: 10px;"><code data-trim data-noescape>
                         const x = 5;
                         var x = 5;
@@ -63,6 +122,9 @@
                     </code></pre>
                 </section>
                 <section>
+                    <p>
+                        Numbers, objects and arrays
+                    </p>
                     <pre style="width: 45%; float: left; margin: 10px;"><code data-trim data-noescape>
                         3
                         3.1415
@@ -101,6 +163,9 @@
                     </code></pre>
                 </section>
                 <section>
+                    <p>
+                        Functions, blocks, and currying
+                    </p>
                     <pre style="width: 45%; float: left; margin: 10px;"><code data-trim data-noescape>
                         arg => retVal
                         function named(arg) {...}
@@ -131,6 +196,9 @@
                     </code></pre>
                 </section>
                 <section>
+                    <p>
+                        Ifs, destructuring, loops
+                    </p>
                     <pre style="width: 45%; float: left; margin: 10px;"><code data-trim data-noescape>
                         if (a) {b} else {c}
                         a ? b : c
